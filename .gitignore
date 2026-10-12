@@ -1,0 +1,16 @@
+# Python / Entorno virtual
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+
+# Node / Vite / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs y base de datos local
+*.log
+.env

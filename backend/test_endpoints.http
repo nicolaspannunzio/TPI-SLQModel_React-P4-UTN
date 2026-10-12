@@ -1,0 +1,61 @@
+### 1. Listar productos (inicialmente vacío)
+GET http://localhost:8000/productos
+
+### 2. Crear un producto válido
+POST http://localhost:8000/productos
+Content-Type: application/json
+
+{
+  "nombre": "iPhone 15",
+  "descripcion": "Electrónica y telefonía",
+  "precio": 999.00
+}
+
+### 3. Crear otro producto válido
+POST http://localhost:8000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Remera Nike",
+  "descripcion": "Ropa deportiva",
+  "precio": 35.50
+}
+
+### 4. Probar validación 422 (Precio negativo)
+POST http://localhost:8000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Producto Inválido",
+  "descripcion": "Test",
+  "precio": -10.0
+}
+
+### 5. Probar validación 409 Conflict (Nombre duplicado)
+POST http://localhost:8000/productos
+Content-Type: application/json
+
+{
+  "nombre": "iPhone 15",
+  "descripcion": "Otro teléfono",
+  "precio": 800.0
+}
+
+### 6. Obtener producto por ID (existente)
+GET http://localhost:8000/productos/1
+
+### 7. Obtener producto por ID (404 Inexistente)
+GET http://localhost:8000/productos/999
+
+### 8. Actualizar producto por ID
+PUT http://localhost:8000/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "iPhone 15 Pro",
+  "descripcion": "Actualizado con titanio",
+  "precio": 1099.00
+}
+
+### 9. Eliminar producto por ID
+DELETE http://localhost:8000/productos/1
