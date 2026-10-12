@@ -19,7 +19,7 @@ export const ProductoList = ({ productos }: ProductoListProps) => {
               <th className="py-2 px-4 font-normal">Id</th>
               <th className="py-2 px-4 font-normal">Nombre</th>
               <th className="py-2 px-4 font-normal">Precio</th>
-              <th className="py-2 px-4 font-normal">Categoría</th>
+              <th className="py-2 px-4 font-normal">Descripción</th>
             </tr>
           </thead>
           <tbody>

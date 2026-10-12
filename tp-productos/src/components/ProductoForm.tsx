@@ -27,10 +27,10 @@ export const ProductoForm = () => {
         </div>
 
         <div>
-          <label className="block text-xs text-gray-500 mb-1">Categoría</label>
+          <label className="block text-xs text-gray-500 mb-1">Descripción</label>
           <input
             type="text"
-            placeholder="Ej: electrónica"
+            placeholder="Ej: Auriculares inalámbricos con cancelación de ruido"
             disabled
             className="w-full px-3 py-2 border border-gray-200 rounded-lg bg-gray-50/50 text-gray-400 text-sm focus:outline-none"
           />
